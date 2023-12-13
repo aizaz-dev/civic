@@ -1,3 +1,4 @@
+@import "./media.scss";
 .first_slider {
   position: relative;
 }
@@ -9,6 +10,12 @@
   right: -20px;
   top: -150px;
   gap: 50px !important;
+  @include xtablet {
+    bottom: -90px !important;
+    top: auto !important;
+    left: 0px !important;
+    right: 0px !important;
+  }
 }
 .first_slider .owl-prev,
 .first_slider .owl-next {
@@ -17,7 +24,11 @@
   border: 1px solid black !important;
   border-radius: 50% !important;
 }
-
+#owl-carousel-ul {
+  @include xtablet {
+    padding-left: 0px !important;
+  }
+}
 // Our Work
 
 .our_work {
@@ -34,6 +45,13 @@
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
+  @include xtablet {
+    bottom: -90px !important;
+    top: auto !important;
+    left: 0px !important;
+    right: 0px !important;
+    display: block !important;
+  }
 }
 .our_work .owl-prev,
 .our_work .owl-next {
@@ -65,15 +83,54 @@
 }
 .feature_listing .owl-nav {
   position: absolute;
-  right: -20px !important;
+  right: 40px !important;
   top: -150px;
   left: auto !important;
   gap: 50px !important;
   display: block !important;
   width: fit-content !important;
+  @include xtablet {
+    bottom: -90px !important;
+    top: auto !important;
+    left: 50% !important;
+    right: 0px !important;
+    display: block !important;
+  }
 }
 .feature_listing .owl-prev,
 .feature_listing .owl-next {
+  width: 55px !important;
+  height: 55px !important;
+  border: 1px solid black !important;
+  border-radius: 50% !important;
+}
+
+// Creative Potential
+
+.creative_potential {
+  position: relative;
+}
+.creative_potential #owl-carousel-ul {
+  position: static !important;
+}
+.creative_potential .owl-nav {
+  position: absolute;
+  right: 40px !important;
+  top: -150px;
+  left: auto !important;
+  gap: 50px !important;
+  display: block !important;
+  width: fit-content !important;
+  @include xtablet {
+    bottom: -90px !important;
+    top: auto !important;
+    left: 50% !important;
+    right: 0px !important;
+    display: block !important;
+  }
+}
+.creative_potential .owl-prev,
+.creative_potential .owl-next {
   width: 55px !important;
   height: 55px !important;
   border: 1px solid black !important;

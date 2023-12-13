@@ -10,49 +10,36 @@ const carouselItems = [
     image: "https://file.rendit.io/n/Bw13x8xSflrq0H6smlAI.png",
     title: "Photography Sessions",
     description: "Explore our stunning collection of images for inspiration.",
-    social: "/insta.png",
-    price: 33,
   },
   {
     id: 2,
     image: "https://file.rendit.io/n/h6wNkC8SaAKbrc1CVhgW.png",
     title: "Social Media Consultation",
     description: "Explore our stunning collection of images for inspiration.",
-    social: "/insta.png",
-
-    price: 44,
   },
   {
     id: 3,
     image: "https://file.rendit.io/n/if7PUNsfqsVccH8NVEyx.png",
     title: "Content Collaboration",
     description: "Explore our stunning collection of images for inspiration.",
-    social: "/insta.png",
-    price: 55,
   },
   {
     id: 4,
     image: "https://file.rendit.io/n/aQOth4Js3mac5DhW03DR.png",
     title: "Event Hosting",
     description: "Explore our stunning collection of images for inspiration.",
-    social: "/insta.png",
-    price: 22,
   },
   {
     id: 5,
     image: "https://file.rendit.io/n/Bw13x8xSflrq0H6smlAI.png",
     title: "5",
     description: "Explore our stunning collection of images for inspiration.",
-    social: "/insta.png",
-    price: 55,
   },
   {
     id: 6,
     image: "https://file.rendit.io/n/h6wNkC8SaAKbrc1CVhgW.png",
     title: "6",
     description: "Explore our stunning collection of images for inspiration.",
-    social: "/insta.png",
-    price: 40,
   },
 ];
 var $ = require("jquery");
@@ -92,30 +79,30 @@ const Slider = () => {
         items: 2,
       },
       700: {
-        items: 2,
+        items: 3,
       },
       1000: {
-        items: 3,
+        items: 4,
       },
     },
   };
 
   return (
-    <div className="our_work relative row">
+    <div className="creative_potential relative row">
       <div
         className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-white"
         id="owl-carousel-products"
       >
-        <div className="lg:mb-20 mb:16 lg:mt-16 mt-20">
-          <div className="our_work_title text-center [font-family:'Quicksand',Helvetica] font-bold text-[#68c1b8] text-[16px] tracking-[0] leading-[24px] whitespace-nowrap">
-            Our Work
+        <div className="lg-mb-20 mb-10 lg:mt-28 mt-12">
+          <div className="text-[30px] lg:text-[46px] font-['Gilroy-Bold-☞'] leading-[55.2px] capitalize text-[#232323]">
+            Unlock Your Creative Potential
           </div>
-          <div className="[font-family:'Gilroy-Bold-☞',Helvetica] font-normal text-[#232323] lg:text-[46px] text-[30px] text-center tracking-[0] lg:leading-[55.2px] ">
-            Top Influencers By Platform
+          <div
+            id="InfluencersRoot"
+            className="font-['Quicksand'] leading-[24px] text-[16px]"
+          >
+            Explore our stunning collection of images for inspiration.
           </div>
-          <p className="[font-family:'Quicksand',Helvetica] font-normal text-black text-[16px] text-center tracking-[0] leading-[24px]">
-            Explore our diverse influencers in various social platforms
-          </p>
         </div>
         <ul id="owl-carousel-ul" className="owl-carousel owl-loaded owl-drag">
           <OwlCarousel
@@ -142,25 +129,17 @@ const Slider = () => {
                       >
                         <div className="productListing w-full">
                           <img
-                            className="w-full object-cover"
+                            className="w-full h-[414px]"
                             id={"img" + product.id}
                             src={product.image}
                             alt={product.name}
                           />
-                          <div className="flex row mt-4">
-                            <img
-                              src={product.social}
-                              alt={product.name}
-                              className="social_icon w-[34px] h-[34px] object-cover ml-4"
-                            />
-                            <div className="[font-family:'Quicksand',Helvetica] font-bold text-black text-[24px] tracking-[0] leading-[36px]">
+                          <div className="flex row w-100 mt-4">
+                            <div className="text-capitalize [font-family:'Quicksand',Helvetica] font-bold text-black text-[20px] ">
                               {product.title}
                             </div>
-                            <div className="[font-family:'Quicksand',Helvetica] font-normal text-black text-[16px] tracking-[0] leading-[24px]">
+                            <div className="[font-family:'Quicksand',Helvetica] font-normal text-black text-[16px] tracking-[0] leading-[24px] itemPrice px-[12]">
                               {product.description}
-                            </div>
-                            <div className="[font-family:'Quicksand',Helvetica] font-bold text-[#68c1b8] text-[20px] tracking-[0] leading-[30px] whitespace-nowrap">
-                              ${product.price}
                             </div>
                           </div>
                         </div>

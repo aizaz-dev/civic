@@ -4,6 +4,8 @@ import Slider from "./Slider";
 import Hero from "./Hero";
 import OurWork from "./OurWork";
 import FeaturedListings from "./FeaturedListings";
+import InfluencerMarketingPotential from "./InfluencerMarketingPotential";
+import CreativePotential from "./CreativePotential";
 
 const Landing = () => {
   return (
@@ -11,6 +13,8 @@ const Landing = () => {
       <Slider />
       <OurWork />
       <FeaturedListings />
+      <InfluencerMarketingPotential />
+      <CreativePotential />
     </div>
   );
 };

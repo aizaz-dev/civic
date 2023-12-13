@@ -93,8 +93,8 @@ const Slider = () => {
         className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-white"
         id="owl-carousel-products"
       >
-        <h3 className="mb-20 mt-28">
-          <div className="text-5xl md:text-4 font-['Gilroy-Bold-☞'] leading-[55.2px] capitalize text-[#232323] w-min">
+        <div className="lg-mb-20 mb-10 lg:mt-28 mt-12">
+          <div className="text-[30px] lg:text-[46px] font-['Gilroy-Bold-☞'] leading-[55.2px] capitalize text-[#232323]">
             Featured Products
           </div>
           <div
@@ -103,7 +103,7 @@ const Slider = () => {
           >
             Explore our stunning collection of images for inspiration.
           </div>
-        </h3>
+        </div>
         <ul id="owl-carousel-ul" className="owl-carousel owl-loaded owl-drag">
           <OwlCarousel
             className="owl-theme"
