@@ -169,7 +169,7 @@ const Slider = () => {
                           />
                           <div className="flex items-center p-2 absolute top-4 left-0 w-[189px] h-[72px] bg-[#fdfdfd74] backdrop-blur-20 blur-20 rounded-r-full">
                             <img
-                              src="/image-52.png"
+                              src="/Image-52.png"
                               className="!w-[45px] h-[45px] object-cover"
                               alt=""
                             />
