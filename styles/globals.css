@@ -10,7 +10,10 @@
   font-family: Quicksand;
   src: url(./Quicksand-VariableFont_wght.ttf);
 }
-
+.mylink {
+  color: white !important;
+  border: 2px solid black !important;
+}
 html,
 body {
   padding: 0;
