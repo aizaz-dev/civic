@@ -1,0 +1,269 @@
+@import "../media.scss";
+.container {
+  width: 100%;
+  // height: 10vh;
+  // border: 2px solid grey;
+  // background-color: aqua;
+  max-width: 1800px;
+  margin: auto;
+  padding: 0 60px;
+
+  @include xtablet {
+    padding: 0 18px;
+  }
+
+  .toph1 {
+    //Top Influencers H1
+    margin-top: 2%;
+    margin: 2%;
+    height: 55px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120%;
+    text-transform: capitalize;
+
+    color: #232323;
+
+    @include xtablet {
+      text-align: center;
+      line-height: 80%;
+    }
+  }
+
+  .topp {
+    //Top P Tag
+
+    height: 24px;
+    margin: 2%;
+    margin-top: -1.5%;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+
+    @include xtablet {
+      text-align: center;
+      padding: 5% 0;
+    }
+  }
+
+  .cardsflex {
+    //Grid Cards
+    width: 100%;
+    margin-top: 1.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    justify-content: space-around;
+
+    @include xtablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    .influence {
+      //Cards
+      width: 100%;
+      height: 417px;
+      margin-bottom: 3%;
+      border-radius: 5%;
+      background-image: url("../../pages/assets/inf.png");
+      background-size: cover;
+
+      .siderad {
+        //Left aside inside Cards
+        margin-top: 5%;
+        width: 250px;
+        height: 72px;
+        background-image: url("../../pages/assets/bgrec.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+        }
+
+        button {
+          background: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .influence2 {
+      //Card
+      width: 100%;
+      height: 417px;
+      margin-bottom: 3%;
+      border-radius: 5%;
+      background-image: url("../../pages/assets/inf.png");
+      background-size: cover;
+
+      .siderad2 {
+        margin-top: 5%;
+        width: 250px;
+        height: 72px;
+        background-image: url("../../pages/assets/bgrec.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+        }
+
+        button {
+          background: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .influence3 {
+      //Card
+      width: 100%;
+      height: 417px;
+      margin-bottom: 3%;
+      border-radius: 5%;
+      background-image: url("../../pages/assets/inf3.png");
+      background-size: cover;
+
+      .siderad2 {
+        margin-top: 5%;
+        width: 250px;
+        height: 72px;
+        background-image: url("../../pages/assets/bgrec.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+        }
+
+        button {
+          background: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .influence4 {
+      //Card
+      width: 100%;
+      height: 417px;
+      margin-bottom: 3%;
+      border-radius: 5%;
+      background-image: url("../../pages/assets/inf4.png");
+      background-size: cover;
+
+      .siderad2 {
+        margin-top: 5%;
+        width: 250px;
+        height: 72px;
+        background-image: url("../../pages/assets/bgrec.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+        }
+
+        button {
+          background: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .influence5 {
+      //Card
+      width: 100%;
+      height: 417px;
+      margin-bottom: 3%;
+      border-radius: 5%;
+      background-image: url("../../pages/assets/inf5.png");
+      background-size: cover;
+
+      .siderad2 {
+        margin-top: 5%;
+        width: 250px;
+        height: 72px;
+        background-image: url("../../pages/assets/bgrec.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+        }
+
+        button {
+          background: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .influence6 {
+      //Card
+      width: 100%;
+      height: 417px;
+      margin-bottom: 3%;
+      border-radius: 5%;
+      background-image: url("../../pages/assets/inf6.png");
+      background-size: cover;
+
+      .siderad2 {
+        margin-top: 5%;
+        width: 250px;
+        height: 72px;
+        background-image: url("../../pages/assets/bgrec.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+        }
+
+        button {
+          background: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

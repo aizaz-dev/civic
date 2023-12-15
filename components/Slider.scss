@@ -124,13 +124,132 @@
   @include xtablet {
     bottom: -90px !important;
     top: auto !important;
-    left: 50% !important;
-    right: 0px !important;
+    left: 27% !important;
+    right: auto !important;
     display: block !important;
   }
 }
 .creative_potential .owl-prev,
 .creative_potential .owl-next {
+  width: 55px !important;
+  height: 55px !important;
+  border: 1px solid black !important;
+  border-radius: 50% !important;
+}
+
+// Navbar
+.navbar {
+  position: relative;
+}
+.navbar #owl-carousel-ul {
+  position: static !important;
+}
+.navbar .owl-nav {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: -10px;
+  bottom: 0 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  @include xtablet {
+    bottom: 0px !important;
+    top: -30px !important;
+    left: 0px !important;
+    right: 0px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+}
+.navbar .owl-prev,
+.navbar .owl-next {
+  width: 15px !important;
+  height: 15px !important;
+  border: 0px solid black !important;
+  border-radius: 50% !important;
+}
+.navbar .owl-prev {
+  margin-left: -70px !important;
+  @include xtablet {
+    margin-left: 0px !important;
+    display: none !important;
+  }
+}
+.navbar .owl-next {
+  margin-right: -70px !important;
+  @include xtablet {
+    margin-right: 0px !important;
+    display: none !important;
+  }
+}
+
+.navbar .social_icon {
+  width: 34px !important;
+  height: 34px !important;
+  object-fit: cover !important;
+  padding: 0px !important;
+}
+
+// Makeup
+
+.beauty_makeup {
+  position: relative;
+}
+.beauty_makeup #owl-carousel-ul {
+  position: static !important;
+}
+.beauty_makeup .owl-nav {
+  position: absolute;
+  right: 40px !important;
+  top: -150px;
+  left: auto !important;
+  gap: 50px !important;
+  display: block !important;
+  width: fit-content !important;
+  @include xtablet {
+    bottom: -90px !important;
+    top: auto !important;
+    left: 28% !important;
+    right: auto !important;
+    display: block !important;
+  }
+}
+.beauty_makeup .owl-prev,
+.beauty_makeup .owl-next {
+  width: 55px !important;
+  height: 55px !important;
+  border: 1px solid black !important;
+  border-radius: 50% !important;
+}
+
+// Top Trends
+
+.top_trending {
+  position: relative;
+}
+.top_trending #owl-carousel-ul {
+  position: static !important;
+}
+.top_trending .owl-nav {
+  position: absolute;
+  right: 40px !important;
+  top: -150px;
+  left: auto !important;
+  gap: 50px !important;
+  display: block !important;
+  width: fit-content !important;
+  @include xtablet {
+    bottom: -90px !important;
+    top: auto !important;
+    left: 28% !important;
+    right: auto !important;
+    display: block !important;
+  }
+}
+.top_trending .owl-prev,
+.top_trending .owl-next {
   width: 55px !important;
   height: 55px !important;
   border: 1px solid black !important;

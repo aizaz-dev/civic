@@ -1,5 +1,9 @@
 import "../styles/globals.css";
 import "../components/Slider.scss";
+import "../components/TopInfluencers/Landing.scss";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>

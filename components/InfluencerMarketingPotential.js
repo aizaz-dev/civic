@@ -3,7 +3,7 @@ import React from "react";
 const InfluencerMarketingPotential = () => {
   return (
     <div id="ComponentRoot" className="flex flex-row w-full items-start">
-      <div className=" flex flex-row gap-12 w-full items-start pt-20">
+      <div className=" flex flex-row gap-12 w-full items-start lg:pt-20 pt-4">
         <div className="flex flex-col lg:mt-48 mt-12 gap-5 lg:w-1/2 w-full items-start">
           <div className="flex flex-col justify-between gap-2 w-full items-start">
             <div

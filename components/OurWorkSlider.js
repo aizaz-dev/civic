@@ -142,7 +142,7 @@ const Slider = () => {
                       >
                         <div className="productListing w-full">
                           <img
-                            className="w-full object-cover"
+                            className="w-full max-w-[330px] object-cover"
                             id={"img" + product.id}
                             src={product.image}
                             alt={product.name}

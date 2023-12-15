@@ -90,11 +90,11 @@ const Slider = () => {
   return (
     <div className="creative_potential relative row">
       <div
-        className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-white"
+        className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pb-2 bg-white"
         id="owl-carousel-products"
       >
-        <div className="lg-mb-20 mb-10 lg:mt-28 mt-12">
-          <div className="text-[30px] lg:text-[46px] font-['Gilroy-Bold-☞'] leading-[55.2px] capitalize text-[#232323]">
+        <div className="lg-mb-20 mb-10 lg:mt-20 mt-12">
+          <div className="text-[30px] lg:text-[46px] font-['Gilroy-Bold-☞'] lg:leading-[55.2px] capitalize text-[#232323]">
             Unlock Your Creative Potential
           </div>
           <div

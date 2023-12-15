@@ -124,17 +124,17 @@ const Slider = () => {
   };
 
   return (
-    <div className="feature_listing relative row lg:mb-[40px] mb-[80px]">
+    <div className="beauty_makeup relative row lg:mb-[40px] mb-[80px]">
       <div
-        className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-white"
+        className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 lg:mt-3 pb-2 bg-white"
         id="owl-carousel-products"
       >
-        <div className="lg:mb-20 mb:16 lg:mt-16 mt-20">
+        <div className="lg:mb-20 mb:16 lg:mt-16 mt-10">
           <div className="[font-family:'Gilroy-Bold-☞',Helvetica] font-normal text-[#232323] lg:text-[46px] text-[30px] tracking-[0] leading-[55.2px]">
-            Featured Listings
+            Beauty And Makeup
           </div>
           <p className="[font-family:'Quicksand-Regular',Helvetica] font-normal text-black text-[16px] tracking-[0] leading-[24px]">
-            Explore our stunning collection of images for inspiration.
+            Explore our wide range of high-quality influencers.
           </p>
         </div>
         <ul id="owl-carousel-ul" className="owl-carousel owl-loaded owl-drag">
