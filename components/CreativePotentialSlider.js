@@ -141,6 +141,27 @@ const Slider = () => {
                             <div className="[font-family:'Quicksand',Helvetica] font-normal text-black text-[16px] tracking-[0] leading-[24px] itemPrice px-[12]">
                               {product.description}
                             </div>
+                            <div className="flex mt-2">
+                              <img
+                                src="/avatar3.png"
+                                className="rounded-full !w-[42px] h-[42px] object-cover "
+                              />
+                              <div className="flex flex-col ml-2">
+                                <div
+                                  id="InfluencersRoot"
+                                  style={{ fontSize: "16px" }}
+                                  className="font-['Quicksand'] !text-[16px] !font-medium"
+                                >
+                                  James Roberta
+                                </div>
+                                <div
+                                  id="InfluencersRoot"
+                                  className="!text-[12px] font-['Quicksand'] leading-[18px] !font-[400]"
+                                >
+                                  01-12-2023
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>

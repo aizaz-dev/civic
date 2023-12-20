@@ -30,12 +30,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-[50%] justify-center hidden lg:flex">
-        <Image
+        <img
           className="ml-auto mr-auto"
           alt="hero"
           style={{ width: "100%", height: "100%" }}
-          width={600}
-          height={800}
           src="/hero.png"
         />
       </div>
