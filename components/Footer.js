@@ -20,31 +20,49 @@ const Footer = () => {
           </div>
           {/* //Icon And Heading Div */}
           {/* Bottom NavBar */}
-          <div className="max-md:flex-col text-black flex list-none justify-between items-center lg:gap-5 gap-2 text-[16px] font-[600] whitespace-nowrap flex-wrap">
+          <div
+            id="bottombar"
+            className="bottom max-md:flex-col text-black flex list-none md:justify-between items-center xl:!gap-8 lg:!gap-8  text-[16px] font-[600] whitespace-nowrap flex-wrap"
+          >
             <li>
-              <a className="font-[Quicksand] no-underline text-black" href="#">
+              <div
+                className="font-[Quicksand] no-underline text-black"
+                href="#"
+              >
                 About Us
-              </a>
+              </div>
             </li>
             <li>
-              <a className="font-[Quicksand] no-underline text-black" href="#">
+              <div
+                className="font-[Quicksand] no-underline text-black"
+                href="#"
+              >
                 Contact Us Us
-              </a>
+              </div>
             </li>
             <li>
-              <a className="font-[Quicksand] no-underline text-black" href="#">
+              <div
+                className="font-[Quicksand] no-underline text-black"
+                href="#"
+              >
                 FAQs
-              </a>
+              </div>
             </li>
             <li>
-              <a className="font-[Quicksand] no-underline text-black" href="#">
+              <div
+                className="font-[Quicksand] no-underline text-black"
+                href="#"
+              >
                 Support
-              </a>
+              </div>
             </li>
             <li>
-              <a className="font-[Quicksand] no-underline text-black" href="#">
-                Blog
-              </a>
+              <div
+                className="font-[Quicksand] no-underline text-black"
+                href="#"
+              >
+                Blogs
+              </div>
             </li>
           </div>
           {/* //Bottom NavBar */}

@@ -2,7 +2,7 @@ import React from "react";
 
 const PowerOfViralocity = () => {
   return (
-    <div className="m-auto bg-[#F3F3F3]  py-[5%]  flex items-center justify-center">
+    <div className="m-auto bg-[#F3F3F3]  py-[5%]  flex items-center justify-center z-30 relative">
       {/* Second Box Child */}
       <div className="w-[95%] max-w-[1500px] py-[8%] bg-[#68C1B8] rounded-[15px] flex items-center justify-center flex-col gap-2">
         {/* Discover the power of Viralocity ==> H1 */}
