@@ -14,6 +14,7 @@
   color: white !important;
   border: 2px solid black !important;
 }
+
 html,
 body {
   padding: 0;
@@ -25,21 +26,10 @@ body {
   overflow: hidden;
 }
 a {
-  color: inherit;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

@@ -14,6 +14,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const products = [
   {
@@ -176,10 +177,13 @@ export default function Header() {
               Login
             </div>
           </div>
-          <div className="inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative bg-white rounded-[24px]">
-            <div className="relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold text-[#68c1b8] text-[16px] tracking-[0] leading-[24px] whitespace-nowrap">
+          <div className="font-['Quicksand'] font-bold leading-[24px] signup_btn text-![#68c1b8] inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative bg-white rounded-[24px]">
+            <Link
+              href="/signup"
+              className="relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold text-![#68c1b8] text-[16px] tracking-[0] leading-[24px] whitespace-nowrap "
+            >
               Sign Up
-            </div>
+            </Link>
           </div>
         </Popover.Group>
       </nav>

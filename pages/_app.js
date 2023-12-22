@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/header.scss";
 import "../components/Slider.scss";
 import "../components/TopInfluencers/Landing.scss";
 import "owl.carousel/dist/assets/owl.carousel.css";
