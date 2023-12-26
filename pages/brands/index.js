@@ -414,7 +414,7 @@ const index = () => {
                 id="Text4"
                 className="font-['Quicksand'] leading-[28px] text-[#232323] w-full"
               >
-                Grow your brand's reach and engage with your target audience.
+                Grow your brand&apos;s reach and engage with your target audience.
               </div>
             </div>
           </div>
