@@ -100,13 +100,13 @@ export default function Header({
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-6 lg:items-center">
-          <a
-            href="#"
+        <Popover.Group className="influencers_btn hidden lg:flex lg:gap-x-6 lg:items-center ${textOff}">
+          <Link
+            href="/influencers-signup"
             className={` [font-family:Quicksand,Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
             Influencer
-          </a>
+          </Link>
           <a
             href="#"
             className={`[font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
