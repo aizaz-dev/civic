@@ -10,6 +10,14 @@
   font-family: Quicksand;
   src: url(./Quicksand-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(./gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./gilroy/Gilroy-Bold.ttf);
+}
 .mylink {
   color: white !important;
   border: 2px solid black !important;

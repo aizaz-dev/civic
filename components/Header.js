@@ -57,11 +57,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header() {
+export default function Header({
+  bg,
+  textOff,
+  signupText,
+  signupBg,
+  textWhite,
+  textBlack,
+  title,
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#68c1b8] w-full">
+    <header className={`${bg} w-full`}>
       <nav
         className="mx-auto flex items-center justify-between p-6 lg:pr-20 lg:pl-20 lg:px-8"
         aria-label="Global"
@@ -75,7 +83,9 @@ export default function Header() {
             <div className="w-[43px] h-[43px]">
               <div className="w-[43px] h-[43px] bg-[#d9d9d9] rounded-[21.5px]" />
             </div>
-            <div className="[font-family:'Gilroy-Bold-☞',Helvetica] font-normal text-white text-[22px] tracking-[0] leading-[33px] whitespace-nowrap">
+            <div
+              className={`${title} [font-family:'Gilroy-Bold-☞',Helvetica] font-normal text-[22px] tracking-[0] leading-[33px] whitespace-nowrap`}
+            >
               Viralocity
             </div>
           </a>
@@ -83,7 +93,7 @@ export default function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+            className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${textOff}`}
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -93,28 +103,30 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-6 lg:items-center">
           <a
             href="#"
-            className=" [font-family:Quicksand,Helvetica] font-bold text-white text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline"
+            className={` [font-family:Quicksand,Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
             Influencer
           </a>
           <a
             href="#"
-            className=" [font-family:'Quicksand',Helvetica] font-bold text-white text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline"
+            className={`[font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
             Brands
           </a>
           <a
             href="#"
-            className=" [font-family:'Quicksand',Helvetica] font-bold text-white text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline"
+            className={` [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
             Insights
           </a>
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1  [font-family:'Quicksand',Helvetica] font-bold text-white text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline">
+            <Popover.Button
+              className={`flex items-center gap-x-1  [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
+            >
               Campaigns
               <ChevronDownIcon
-                className="h-5 w-5 flex-none text-white"
+                className={`h-5 w-5 flex-none ${textOff}`}
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -172,15 +184,21 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <div className="inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative rounded-[24px] border border-solid border-white">
-            <div className="relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold text-white text-[16px] tracking-[0] leading-[24px] whitespace-nowrap">
+          <div
+            className={`inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative rounded-[24px] border-2 border-solid border-${textOff}`}
+          >
+            <div
+              className={`relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}
+            >
               Login
             </div>
           </div>
-          <div className="font-['Quicksand'] font-bold leading-[24px] signup_btn text-![#68c1b8] inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative bg-white rounded-[24px]">
+          <div
+            className={`font-['Quicksand'] font-bold leading-[24px] signup_btn ${signupText} inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative ${signupBg} rounded-[24px]`}
+          >
             <Link
               href="/signup"
-              className="relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold text-![#68c1b8] text-[16px] tracking-[0] leading-[24px] whitespace-nowrap "
+              className={`relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold ${signupText} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap `}
             >
               Sign Up
             </Link>
@@ -246,19 +264,19 @@ export default function Header() {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 !text-gray-900 hover:bg-gray-50"
                 >
                   Features
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 !text-gray-900 hover:bg-gray-50"
                 >
                   Marketplace
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 !text-gray-900 hover:bg-gray-50"
                 >
                   Company
                 </a>
@@ -266,7 +284,7 @@ export default function Header() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 !text-gray-900 hover:bg-gray-50"
                 >
                   Log in
                 </a>

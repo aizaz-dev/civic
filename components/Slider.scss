@@ -257,11 +257,14 @@
 }
 a {
   text-decoration: none !important;
-  color: white !important;
+  // color: white !important;
 }
-.signup_btn {
+// .signup_btn {
+//   color: #68c1b8 !important;
+// }
+.continer-fluid .signup_btn a {
   color: #68c1b8 !important;
 }
-.signup_btn a{
-  color: #68c1b8 !important;
+.listing_con .signup_btn a {
+  color: #fff !important;
 }
