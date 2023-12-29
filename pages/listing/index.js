@@ -9,10 +9,10 @@ import QualityInstagram from "../../components/Listing/QualityInstagram";
 import Profile from "../../components/Listing/Profile";
 import { useRouter } from "next/router";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
-  const {pathname} = router;
-  
+  const { pathname } = router;
+
   return (
     <div className="listing_con overflow-x-hidden">
       <Header
@@ -34,4 +34,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

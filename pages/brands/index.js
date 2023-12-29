@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Sliderbrands from "../../components/brands/Sliderbrands";
 import PowerOfViralocity from "../../components/brands/PowerOfViralocity-brand";
 import Faqs from "../../components/brands/Faqs";
-const index = () => {
+const Index = () => {
   return (
     <main>
       <div className="brands w-[100%] m-auto flex items-center justify-center bg-[#68C1B8] ">
@@ -446,4 +446,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

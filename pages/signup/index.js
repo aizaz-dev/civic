@@ -1,4 +1,4 @@
-const index = () => {
+const Index = () => {
   return (
     <div className="relative max-w-[1400px] w-full ml-auto mr-auto lg:px-[60px] px-[20px] py-[30px] flex gap-12 overflow-hidden">
       <div className="left lg:w-1/2 w-full">
@@ -91,4 +91,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
