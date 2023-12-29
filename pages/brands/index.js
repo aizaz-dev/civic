@@ -6,7 +6,7 @@ import Faqs from "../../components/brands/Faqs";
 const index = () => {
   return (
     <main>
-      <div className=" w-[100%] m-auto flex items-center justify-center bg-[#68C1B8] ">
+      <div className="brands w-[100%] m-auto flex items-center justify-center bg-[#68C1B8] ">
         <div className="max-w-[1400px] w-full">
           <Header 
            bg={"bg-[#68c1b8]"}

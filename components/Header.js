@@ -75,20 +75,13 @@ export default function Header({
         aria-label="Global"
       >
         <div className="flex lg:flex-1 ">
-          <a
-            href="#"
-            className="-m-1.5 p-1.5 flex gap-2 items-center no-underline"
-          >
+         
             <span className="sr-only">Your Company</span>
-            <div className="w-[43px] h-[43px]">
-              <div className="w-[43px] h-[43px] bg-[#d9d9d9] rounded-[21.5px]" />
+            <div className="w-[150px] h-[60px]">
+              <img src="/Logo.svg" className=" fill-black" alt="" />
             </div>
-            <div
-              className={`${title} [font-family:'Gilroy-Bold-☞',Helvetica] font-normal text-[22px] tracking-[0] leading-[33px] whitespace-nowrap`}
-            >
-              Viralocity
-            </div>
-          </a>
+            
+        
         </div>
         <div className="flex lg:hidden">
           <button
