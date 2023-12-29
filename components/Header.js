@@ -16,6 +16,7 @@ import {
 } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
+import { withRouter } from "next/router";
 const products = [
   {
     name: "Analytics",
@@ -57,7 +58,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header({
+ function Header({
   bg,
   textOff,
   signupText,
@@ -65,9 +66,11 @@ export default function Header({
   textWhite,
   textBlack,
   title,
+  slug,
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+ 
+  console.log(slug);
   return (
     <header className={`${bg} w-full header`}>
       <nav
@@ -75,13 +78,10 @@ export default function Header({
         aria-label="Global"
       >
         <div className="flex lg:flex-1 ">
-         
-            <span className="sr-only">Your Company</span>
-            <div className="w-[150px] h-[60px]">
-              <img src="/Logo.svg" className=" fill-black" alt="" />
-            </div>
-            
-        
+          <span className="sr-only">Your Company</span>
+          <div className="w-[220px] h-[60px]">
+            <img src={`${slug=="/listing"?"/LogoBlack.svg":"/Logo.svg"}`} className=" fill-black" alt="" />
+          </div>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -102,24 +102,22 @@ export default function Header({
               Influencer
             </Link>
           </div>
-          <a
-            href="#"
+          <div
             className={`header_links_btn [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
-            Brands
-          </a>
-          <a
-            href="#"
+            <Link href="/brands">Brands</Link>
+          </div>
+          <div
             className={`header_links_btn [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
-            Insights
-          </a>
+            <Link href="/listing">Insights</Link>
+          </div>
 
           <Popover className="relative">
             <Popover.Button
               className={`header_links_btn flex items-center gap-x-1  [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
             >
-              Campaigns
+              <Link href="/influencers-signup">Campaigns</Link>
               <ChevronDownIcon
                 className={`h-5 w-5 flex-none ${textOff}`}
                 aria-hidden="true"
@@ -291,3 +289,5 @@ export default function Header({
     </header>
   );
 }
+
+export default withRouter(Header);
