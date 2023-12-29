@@ -4,7 +4,7 @@ import React from "react";
 const Unleash = () => {
   return (
     <main>
-      <div className=" pb-[30px] m-auto lg:px-[80px] px-[20px]">
+      <div className=" pb-[30px] mx-auto lg:px-[80px] px-[20px] lg:mt-[160px] mt-[60px]">
         <div className="max-w-[1400px] m-auto flex flex-col gap-16  font-['Quicksand'] items-start justify-center w-full">
           <div className="flex flex-col m-auto gap-5  items-center">
             <div className="flex flex-col m-auto gap-2  font-['Gilroy-Bold'] items-center">
@@ -16,7 +16,7 @@ const Unleash = () => {
               </div>
               <div
                 id="Heading"
-                className="text-center text-5xl leading-[57.6px] text-[#232323] max-md:text-3xl"
+                className="text-center text-5xl leading-[57.6px] font-[Gilroy] text-[#232323] max-md:text-3xl"
               >
                 Stand Out and Be Discovered
                 <br />
@@ -25,7 +25,7 @@ const Unleash = () => {
             </div>
             <div
               id="Text1"
-              className="text-center text-lg leading-[28px] text-[#797d7d] w-full max-md:text-[15px]"
+              className="text-center font-[Quicksand] text-lg leading-[28px] text-[#797d7d] w-full max-md:text-[15px]"
             >
               Join Viralocity and position yourself in the spotlight where
               leading brands are searching for influencers just like you. It&apos;s
@@ -43,7 +43,7 @@ const Unleash = () => {
               <div className="flex flex-col ml-1 gap-3 w-full font-['Quicksand'] items-start">
                 <div
                   id="Heading1"
-                  className="text-2xl font-['Gilroy-Bold'] leading-[31.2px] text-[#232323]"
+                  className="text-2xl font-[Gilroy-Bold] leading-[31.2px] text-[#232323]"
                 >
                   Unlock Exclusive Opportunities
                 </div>

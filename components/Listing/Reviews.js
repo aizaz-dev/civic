@@ -45,7 +45,7 @@ const reviews = [
 ];
 const Reviews = () => {
   return (
-    <div className="max-w-[1400px] w-full mx-auto lg:px-[60px] px-[20px] lg:mb-[160px] mb-[80px]">
+    <div className="max-w-[1400px] w-full mx-auto lg:px-[80px] px-[20px] lg:mb-[160px] mb-[80px]">
       <div className="flex flex-col mb-[40px]">
         <div className="text-center lg:text-5xl text-3xl font-['Helvetica'] font-bold leading-[56px]">
           Customer Reviews
@@ -54,12 +54,12 @@ const Reviews = () => {
           See what our customers are saying
         </div>
       </div>
-      <div className="flex flex-wrap gap-[20px]">
+      <div className="grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-none flex-wrap gap-[20px]">
         {reviews.map((item) => {
           return (
             <div
               key={item.id}
-              className=" rounded-[14px] bg-[#f2f9f9] border border-[#99c1bd] w-[401px] p-[20px]"
+              className=" rounded-[14px] bg-[#f2f9f9] border border-[#99c1bd] p-[20px]"
             >
               <div className="flex flex-row justify-between w-full items-start">
                 <img

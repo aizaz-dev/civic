@@ -18,6 +18,10 @@
   font-family: Gilroy;
   src: url(./gilroy/Gilroy-Bold.ttf);
 }
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(./gilroy/Gilroy-Regular.ttf);
+}
 .mylink {
   color: white !important;
   border: 2px solid black !important;

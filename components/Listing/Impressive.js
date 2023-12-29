@@ -22,7 +22,7 @@ const campaigns = [
 ];
 const Impressive = () => {
   return (
-    <div className="max-w-[1400px] w-full mx-auto lg:px-[60px] px-[20px] lg:mb-[160px] mb-[80px]">
+    <div className="relative max-w-[1400px] w-full mx-auto lg:px-[60px] px-[20px] lg:mb-[160px] mb-[80px]">
       <div className="relative flex flex-col justify-between w-full font-['Quicksand']">
         <div className="relative flex flex-col lg:gap-4 gap-1 mb-12">
           <div className="flex flex-col w-full font-['Helvetica']">
@@ -90,6 +90,7 @@ const Impressive = () => {
           </div>
         </div>
       </div>
+      <div className="absolute w-[448px] h-[448px] bottom-[100px] left-[-300px] bg-[#68c1b83c] rounded-[224px] blur-[50px] z-1"></div>
     </div>
   );
 };

@@ -19,41 +19,39 @@ const Stream = () => {
   return (
     <main>
       {/* Main Container  */}
-      <div className="w-[100%] max-w-[2000px] m-auto lg:py-[60px] py-[20px] flex items-center justify-center">
+      <div className="relative w-[100%] max-w-[1400px] mx-auto lg:mt-[160px] mt-[40px] lg:px-20 px-[20px] flex justify-center">
         {/* Flex Box Main  */}
-        <div className="w-[1420px] flex items-center justify-center">
+        <div className="flex gap-10">
           {/* Image Box */}
-          <div className=" max-md:hidden w-[50%] h-[100%] flex items-center justify-start">
+          <div className=" max-md:hidden w-[50%] h-[100%] flex  justify-start">
             <img
-              className="w-[615px] h-[692px] object-cover rounded-[20px]"
-              src="/inf2.png"
+              className="w-[615px] object-cover rounded-[20px]"
+              src="/pink-girl.jpg"
               alt=""
             />
           </div>
           {/* Main Box Center Items */}
-          <div className="max-md:w-[90%] w-[50%] h-[100%] p-[30px] ">
+          <div className="max-md:w-[100%] w-[50%] h-[100%]">
             {/* Cennect P$H Parent */}
-            <div className="mt-4">
+            <div className="">
               <p className=" text-[#68C1B8] font-bold text-[16px] max-md:text-center">
                 Connect
               </p>
             </div>
-            <h1 className="text-[46px] font-normal font-[700] [font-family:'Helvetica'] md-max: text-[30px] max-md:text-[25px] max-md:text-center">
+            <h1 className="text-[46px] font-[700] [font-family:'Gilroy'] md-max:text-[30px] max-md:text-[25px] max-md:text-center">
               Maximize Your Influence with Viralocity
             </h1>
-            <p className="max-md:text-[12px] max-md:text-center">
-              Get access to premier brand deals and global opportunities,{" "}
-              <br className="hidden md:block" /> connecting you with top brands
-              in your niche. Maximize your earning{" "}
-              <br className="hidden md:block" /> potential and grow your
-              influence.
+            <p className="text-[18px] max-md:text-center text-[#666] font-[Quicksand]">
+              Get access to premier brand deals and global opportunities,
+              connecting you with top brands in your niche. Maximize your
+              earning potential and grow your influence.
             </p>
             {/* Learn More & Sign Up Buttons Box */}
 
             {/* main */}
-            <div className="mt-4 w-[80%] pt-[8px] flex max-md:w-full max-md:gap-3 ">
+            <div className="mt-4 pt-[8px] flex max-md:w-full max-md:gap-3 ">
               {/* icon */}
-              <div className="w-[75px]   flex flex-col justify-center gap-4 max-md:gap-6 max-md:items-end">
+              <div className="w-[75px]   flex flex-col justify-between max-md:items-end pb-[30px]">
                 <div className="w-[60px] h-[60px] bg-[#e1f3f1] rounded-[50%] flex items-center justify-center">
                   <div className="w-[45px] h-[45px] bg-[#68c1b8] flex items-center  justify-center rounded-[50%]">
                     <MdWorkspacePremium color="white" fontSize={20} />
@@ -75,7 +73,6 @@ const Stream = () => {
                 <div className="w-[65px] flex items-center justify-center">
                   <img src="/Vector.svg" alt="" />
                 </div>
-
                 {/* icon */}
                 <div className="w-[60px] h-[60px] bg-[#e1f3f1] rounded-[50%] flex items-center justify-center">
                   <div className="w-[45px] h-[45px] bg-[#68c1b8] flex items-center  justify-center rounded-[50%]">
@@ -96,42 +93,42 @@ const Stream = () => {
               </div>
 
               {/* stats */}
-              <div className="w-[70%]  flex flex-col gap-6">
-                <div>
-                  <h1 className="font-bold text-[16px] [font-family:'Helvetica'] ">
+              <div className="flex flex-col w-full gap-6">
+                <div className="w-full">
+                  <h1 className="font-bold lg:text-[24px] text-[18px] [font-family:'Gilroy'] text-[#232323]">
                     Unlock Exclusive Brand Deals
                   </h1>
-                  <p className="[font-family:'Helvetica'] text-[16px] max-md:text-[13px]">
+                  <p className="[font-family:'Quicksand'] p-0 m-0 lg:text-[18px] text-[15px]  text-[#666]">
                     Access premier brand deals and global opportunities that are
                     exclusive to Viralocity influencers.
                   </p>
                 </div>
 
                 <div>
-                  <h1 className="font-bold text-[16px] [font-family:'Helvetica']">
+                  <h1 className="font-bold lg:text-[24px] text-[18px] [font-family:'Gilroy'] text-[#232323]">
                     AI-Driven Campaign Matchmaking
                   </h1>
-                  <p className="[font-family:'Helvetica'] text-[16px] max-md:text-[13px]">
+                  <p className="[font-family:'Quicksand'] p-0 m-0 lg:text-[18px] text-[15px]  text-[#666]">
                     Let our AI-driven matchmaking system connect you with
                     personalized campaign opportunities.
                   </p>
                 </div>
 
                 <div>
-                  <h1 className="font-bold text-[16px] [font-family:'Helvetica']">
+                  <h1 className="font-bold lg:text-[24px] text-[18px] [font-family:'Gilroy'] text-[#232323]">
                     Track Performance and Insights
                   </h1>
-                  <p className="[font-family:'Helvetica'] text-[16px] max-md:text-[13px]">
+                  <p className="[font-family:'Quicksand'] p-0 m-0 lg:text-[18px] text-[15px]  text-[#666]">
                     Track your performance and gain valuable insights with our
                     advanced analytics dashboard.
                   </p>
                 </div>
 
                 <div>
-                  <h1 className="font-bold text-[16px] [font-family:'Helvetica']">
+                  <h1 className="font-bold lg:text-[24px] text-[18px] [font-family:'Gilroy'] text-[#232323]">
                     Unlock Exclusive Opportunities
                   </h1>
-                  <p className="[font-family:'Helvetica'] text-[16px] max-md:text-[13px]">
+                  <p className="[font-family:'Quicksand'] p-0 m-0 lg:text-[18px] text-[15px]  text-[#666]">
                     Discover exclusive brand deals and global opportunities that
                     can take your influence to the next level.
                   </p>
@@ -149,6 +146,8 @@ const Stream = () => {
             </div>
           </div>
         </div>
+        <div className="absolute w-[448px] h-[448px] bottom-[-200px] left-[-300px] bg-[#68c1b83c] rounded-[224px] blur-[50px] z-1"></div>
+        <div className="absolute w-[448px] h-[448px] top-[-300px] left-[-200px] bg-[#68c1b83c] rounded-[224px] blur-[50px] z-1"></div>
       </div>
     </main>
   );

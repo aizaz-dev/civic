@@ -69,7 +69,7 @@ export default function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className={`${bg} w-full`}>
+    <header className={`${bg} w-full header`}>
       <nav
         className="mx-auto flex items-center justify-between p-6 lg:pr-20 lg:pl-20 lg:px-8"
         aria-label="Global"
@@ -100,29 +100,31 @@ export default function Header({
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="influencers_btn hidden lg:flex lg:gap-x-6 lg:items-center ${textOff}">
-          <Link
-            href="/influencers-signup"
-            className={` [font-family:Quicksand,Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
-          >
-            Influencer
-          </Link>
+        <Popover.Group className="hidden lg:flex lg:gap-x-6 lg:items-center ${textOff}">
+          <div className="header_links_btn">
+            <Link
+              href="/influencers-signup"
+              className={` [font-family:Quicksand,Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
+            >
+              Influencer
+            </Link>
+          </div>
           <a
             href="#"
-            className={`[font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
+            className={`header_links_btn [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
             Brands
           </a>
           <a
             href="#"
-            className={` [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
+            className={`header_links_btn [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
           >
             Insights
           </a>
 
           <Popover className="relative">
             <Popover.Button
-              className={`flex items-center gap-x-1  [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
+              className={`header_links_btn flex items-center gap-x-1  [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap no-underline`}
             >
               Campaigns
               <ChevronDownIcon
@@ -188,13 +190,13 @@ export default function Header({
             className={`inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative rounded-[24px] border-2 border-solid border-${textOff}`}
           >
             <div
-              className={`relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}
+              className={`header_links_btn relative w-fit mt-[-1.00px] [font-family:'Quicksand',Helvetica] font-bold ${textOff} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}
             >
               Login
             </div>
           </div>
           <div
-            className={`font-['Quicksand'] font-bold leading-[24px] signup_btn ${signupText} inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative ${signupBg} rounded-[24px]`}
+            className={`header_signup font-['Quicksand'] font-bold leading-[24px] signup_btn ${signupText} inline-flex items-center justify-center gap-[10px] px-[32px] py-[10px] relative ${signupBg} rounded-[24px]`}
           >
             <Link
               href="/signup"

@@ -53,7 +53,7 @@ const Faqs = () => {
   };
   return (
     <div className="max-w-[1400px] w-full mx-auto lg:px-[60px] px-[20px] lg:mb-[160px] mb-[80px] lg:mt-[160px] mt-[80px] rounded-lg">
-      <div className="flex flex-col gap-2 mb-10">
+      <div className="flex flex-col gap-2">
         <div className="text-center lg:text-5xl text-3xl font-['Gilroy'] font-bold lg:leading-[56px]">
           FAQs
         </div>
@@ -62,7 +62,7 @@ const Faqs = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 relative top-[-1.5rem] mb-[2.5rem] md:top-[6rem] md:mb-0">
+      <div className="flex flex-col lg:mt-[40px] mt-[20px] gap-4 relative  mb-[2.5rem]  md:mb-0">
         {Data.map((item, index) => {
           return (
             <div
