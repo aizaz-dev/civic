@@ -28,7 +28,7 @@ const Unleash = () => {
               className="text-center text-lg leading-[28px] text-[#797d7d] w-full max-md:text-[15px]"
             >
               Join Viralocity and position yourself in the spotlight where
-              leading brands are searching for influencers just like you. It's
+              leading brands are searching for influencers just like you. Its
               your time to shine – make every post count and let opportunities
               find you.
             </div>
